@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar title={"Google Imágenes"} />
+      <SearchBar />
     </div>
   );
 }
