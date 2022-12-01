@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react'
-import axios from "axios";
+import React from 'react'
 
-function SearchBar(props) {
-
-  
-
-
-
+function SearchBar() {
   return (
     <div>
-        <h1>{props.title}</h1>        
+       <h1>Buscador</h1>
     </div>
   )
 }
