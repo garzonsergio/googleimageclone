@@ -1,3 +1,11 @@
+.logo-busqueda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    width: 200px;
+}
+
 .searching-tools{
     display: flex;
     flex-flow: column wrap;
