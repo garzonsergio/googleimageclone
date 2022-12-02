@@ -14,12 +14,6 @@ footer {
   color: var(--footer-text-color);
 }
 
-/* .bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-} */
-
 .preferences {
   width: 49vw;
 }
