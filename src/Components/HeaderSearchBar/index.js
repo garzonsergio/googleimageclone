@@ -5,17 +5,16 @@ import "./style.css";
 import { CameraSearch } from "../../Assets/CameraSearch";
 import { FocusSearch } from "../../Assets/FocusSearch";
 
-function MainSearchBar({ activeSearch, setActiveSearch, search, setSearch }) {
+function HeaderSearchBar({ search, setSearch }) {
   const searchInGoogle = (event) => {
     setSearch(event?.target.value);
     console.log(search);
   };
-
   return (
     <React.Fragment>
-      <section className="logo">
+      <section>
         <img
-          className="google"
+          className="logo-busqueda"
           alt="google"
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         />
@@ -23,15 +22,18 @@ function MainSearchBar({ activeSearch, setActiveSearch, search, setSearch }) {
       <section className="searching-tools">
         <div className="search-bar">
           <FocusSearch className={"focus"} />
-          <input className="center-bar" onChange={searchInGoogle} />
+          <input
+            className="center-bar"
+            onChange={searchInGoogle}
+            value={search}
+          />
           <CameraSearch />
-          <div className="search-button" onClick={() => setActiveSearch(true)}>
-            <FocusSearch color={"#4285F4"} className={"focus-button"} />
-          </div>
+          <FocusSearch color={"#4285F4"} className={"focus-button"} />
+          <button onClick={() => alert(search)}>hola gente</button>
         </div>
       </section>
     </React.Fragment>
   );
 }
 
-export { MainSearchBar };
+export { HeaderSearchBar };
