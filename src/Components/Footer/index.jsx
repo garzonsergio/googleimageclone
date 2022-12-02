@@ -4,26 +4,28 @@ import "./style.css"
 function Footer() {
   return (
    <React.Fragment>
-        <section class="footer top">
-            <a class="location">Colombia</a>
-        </section>
-        <section class="footer bottom">
-            <div class="about">
-                <ul class="about-bar">
-                    <li class="itema">Sobre Google</li>
-                    <li class="itema">Publicidad</li>
-                    <li class="itema">Negocios</li>
-                    <li class="itema">Cómo funciona la Búsqueda</li>
-                </ul>
-            </div>
-            <div class="preferences">
-                <ul class="preferences-bar">
-                    <li class="itema">Privacidad</li>
-                    <li class="itema">Condiciones</li>
-                    <li class="itema">Preferencias</li>
-                </ul>
-            </div>
-        </section>
+        <footer>
+            <section className="footer top">
+                <a className="location">Colombia</a>
+            </section>
+            <section className="footer bottom">
+                <div className="about">
+                    <ul className="about-bar">
+                        <li className="itema">Sobre Google</li>
+                        <li className="itema">Publicidad</li>
+                        <li className="itema">Negocios</li>
+                        <li className="itema">Cómo funciona la Búsqueda</li>
+                    </ul>
+                </div>
+                <div className="preferences">
+                    <ul className="preferences-bar">
+                        <li className="itema">Privacidad</li>
+                        <li className="itema">Condiciones</li>
+                        <li className="itema">Preferencias</li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
   </React.Fragment>
   )
 }

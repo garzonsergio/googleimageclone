@@ -1,11 +1,17 @@
-.footer{
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100vw;
-    height: 1.8rem ;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    color: var(--footer-text-color);
+footer {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 1.8rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  color: var(--footer-text-color);
 }
 
 /* .bottom {
@@ -14,51 +20,58 @@
     width: 100vw;
 } */
 
-.preferences{
-    width: 49vw;
+.preferences {
+  width: 49vw;
 }
 
-.about{
-    width: 50vw;
+.about {
+  width: 50vw;
 }
 
 .footer.top {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 2.5rem 0.5rem;
-    align-items: center;
-    border-bottom: 1px solid #dadce0;
-    background-color: var(--footer-color);
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2.5rem 0.5rem;
+  align-items: center;
+  border-bottom: 1px solid #dadce0;
+  background-color: var(--footer-color);
 }
 
-.location{
-    padding: 0 2.5rem;  
+.footer.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--footer-color);
+  height: max-content;
 }
 
-.about-bar{
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-    padding: 2rem;
-    justify-content: left;
-    background-color: var(--footer-color);
+.location {
+  padding: 0 2.5rem;
+}
+
+.about-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  padding: 2rem;
+  justify-content: left;
+  background-color: var(--footer-color);
 }
 
 .preferences-bar {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-    padding: 2rem;
-    justify-content: right;
-    background-color: var(--footer-color);
-
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  padding: 2rem;
+  justify-content: right;
+  background-color: var(--footer-color);
 }
 
-.itema{
-    padding: 0 1.5rem;
+.itema {
+  padding: 0 1.5rem;
 }
 
-.itema:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.itema:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
