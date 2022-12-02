@@ -17,27 +17,29 @@ function HeaderSearchBar({ search, setSearch, getImages }) {
 
   return (
     <React.Fragment>
-      <section>
-        <img
-          className="logo-busqueda"
-          alt="google"
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        />
-      </section>
-      <section className="searching-tools">
-        <div className="search-bar">
-          <FocusSearch className={"focus"} />
-          <input
-            className="center-bar"
-            onChange={searchInGoogle}
-            value={search}
+      <div className="search-header">
+        <section className="logo-header">
+          <img
+            className="logo-busqueda"
+            alt="google"
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           />
-          <CameraSearch />
-          <div className="search-button" onClick={searchInApi}>
-            <FocusSearch color={"#4285F4"} className={"focus-button"} />
+        </section>
+        <section className="searching-tools">
+          <div className="search-bar">
+            <FocusSearch className={"focus"} />
+            <input
+              className="center-bar-header"
+              onChange={searchInGoogle}
+              value={search}
+            />
+            <CameraSearch />
+            <div className="search-button" onClick={searchInApi}>
+              <FocusSearch color={"#4285F4"} className={"focus-button"} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </React.Fragment>
   );
 }

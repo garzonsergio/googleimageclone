@@ -5,13 +5,13 @@ import axios from "axios";
 
 function SearchBar() {
   const [activeSearch, setActiveSearch] = useState(false);
-  const [search, setSearch] = useState("dog");
+  const [search, setSearch] = useState();
   const [images, setImages] = useState();
 
   const getImages = async () => {
     try {
       const res = await axios.get(
-        `https://api.pexels.com/v1/search?query=${search}?locale=es-ES`,
+        `https://api.pexels.com/v1/search?query=${search}`,
         {
           headers: {
             Authorization:
