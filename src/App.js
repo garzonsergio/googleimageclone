@@ -2,6 +2,7 @@ import "./App.css";
 import { SearchBar } from "./Components/SearchBar";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
+import { ImageGallery } from "./Components/ImageGallery";
 
 // API Key Pexels
 // 563492ad6f91700001000001feb193d28b3846d69d14fca34d49387a
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <SearchBar />
+      <ImageGallery />
       <Footer />
     </div>
   );
