@@ -5,10 +5,21 @@ import "./style.css";
 import { CameraSearch } from "../../Assets/CameraSearch";
 import { FocusSearch } from "../../Assets/FocusSearch";
 
-function MainSearchBar({ activeSearch, setActiveSearch, search, setSearch }) {
+function MainSearchBar({
+  activeSearch,
+  setActiveSearch,
+  search,
+  setSearch,
+  getImages,
+}) {
   const searchInGoogle = (event) => {
     setSearch(event?.target.value);
     console.log(search);
+  };
+
+  const searchInApi = () => {
+    setActiveSearch("true");
+    getImages();
   };
 
   return (
@@ -25,7 +36,7 @@ function MainSearchBar({ activeSearch, setActiveSearch, search, setSearch }) {
           <FocusSearch className={"focus"} />
           <input className="center-bar" onChange={searchInGoogle} />
           <CameraSearch />
-          <div className="search-button" onClick={() => setActiveSearch(true)}>
+          <div className="search-button" onClick={searchInApi}>
             <FocusSearch color={"#4285F4"} className={"focus-button"} />
           </div>
         </div>

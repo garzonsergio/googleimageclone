@@ -5,11 +5,16 @@ import "./style.css";
 import { CameraSearch } from "../../Assets/CameraSearch";
 import { FocusSearch } from "../../Assets/FocusSearch";
 
-function HeaderSearchBar({ search, setSearch }) {
+function HeaderSearchBar({ search, setSearch, getImages }) {
   const searchInGoogle = (event) => {
     setSearch(event?.target.value);
     console.log(search);
   };
+
+  const searchInApi = () => {
+    getImages();
+  };
+
   return (
     <React.Fragment>
       <section>
@@ -28,8 +33,9 @@ function HeaderSearchBar({ search, setSearch }) {
             value={search}
           />
           <CameraSearch />
-          <FocusSearch color={"#4285F4"} className={"focus-button"} />
-          <button onClick={() => alert(search)}>hola gente</button>
+          <div className="search-button" onClick={searchInApi}>
+            <FocusSearch color={"#4285F4"} className={"focus-button"} />
+          </div>
         </div>
       </section>
     </React.Fragment>
