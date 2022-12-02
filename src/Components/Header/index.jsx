@@ -1,12 +1,11 @@
 import React from "react";
 import "./style.css"
-// import { HeaderSearchBar } from "../HeaderSearchBar";
+
 
 function Header() {
   return (
     <React.Fragment>
-      <header>
-        {/* <HeaderSearchBar /> */} 
+      <header>        
         <nav>
           <ul className="nav-bar">          
             <li className="products">
