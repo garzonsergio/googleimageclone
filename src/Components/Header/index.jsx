@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+import { SearchedImage } from "../SearchedImage";
 
 
 function Header() {
@@ -16,6 +17,7 @@ function Header() {
             <li className="profile-pic">
               S
             </li>
+            {/* <SearchedImage title={"Catar 2022"}/> */}
           </ul>
         </nav>
       </header>
